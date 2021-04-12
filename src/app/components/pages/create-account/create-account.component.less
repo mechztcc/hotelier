@@ -1,0 +1,88 @@
+@import url(../../../../styles.less);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    background-color: transparent;
+    border: 1px solid @second-color;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 3% 0;
+    border-radius: 5px;
+    animation-duration: 2s;
+    animation-name: bottom-up;
+
+
+    a {
+        color: @third-color;
+    }
+
+    .title {
+        font-size: 35px;
+        color: @second-color;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        color: @font-color;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            
+
+            label {
+                font-weight: bold;
+                margin-top: 5%;
+            }
+
+            input {
+                padding: 7px;
+                border: 1px solid #CACACA;
+                border-radius: 5px;
+            }
+
+            button {
+                border: 1px solid @third-color;
+                color: @third-color;
+                font-weight: bold;
+                border-radius: 5px;
+                background-color: transparent;
+                padding: 5px;
+                margin-top: 5%;
+            }
+
+            button:hover {
+                background-color: @third-color;
+                color: #FFF;
+                border: 1px solid #FFF
+            }
+        }
+
+        .img {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .news {
+            margin-top: 3%;
+            font-size: 12px;
+        }
+
+    }
+
+
+}

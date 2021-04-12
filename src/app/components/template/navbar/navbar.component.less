@@ -11,7 +11,7 @@ nav {
     background-color: transparent;
 
    .logo {
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: left-right;
    }
 
@@ -19,7 +19,7 @@ nav {
        display: flex;
        width: 40%;
        justify-content: space-between;
-       animation-duration: 3s;
+       animation-duration: 2s;
        animation-name: left-right;
 
        a {
@@ -27,6 +27,12 @@ nav {
            color: #000;
            font-weight: 400;
            font-size: 22px;
+       }
+
+       a:hover {
+         color: @second-color;
+         font-weight: bold;
+
        }
 
        button {
@@ -39,14 +45,5 @@ nav {
    }
 
 
-   @keyframes left-right {
-    from {transform: translateX(-300px)}
-    to {transform: translateX(0)}
-  }
-  
-    @keyframes left-rightt {
-    from {transform: translateX(600px)}
-    to {transform: translateX(0)}
-  }
     
 }

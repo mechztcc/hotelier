@@ -10,12 +10,17 @@ nav {
     margin-top: 3%;
     background-color: transparent;
 
-   .logo {}
+   .logo {
+    animation-duration: 3s;
+    animation-name: left-right;
+   }
 
    .links {
        display: flex;
        width: 40%;
        justify-content: space-between;
+       animation-duration: 3s;
+       animation-name: left-right;
 
        a {
            text-decoration: none;
@@ -33,5 +38,15 @@ nav {
     }
    }
 
+
+   @keyframes left-right {
+    from {transform: translateX(-300px)}
+    to {transform: translateX(0)}
+  }
+  
+    @keyframes left-rightt {
+    from {transform: translateX(600px)}
+    to {transform: translateX(0)}
+  }
     
 }

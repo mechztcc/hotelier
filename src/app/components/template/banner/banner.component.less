@@ -9,12 +9,20 @@
     align-items: center;
 
 
-
+    .img {
+        animation-duration: 2s;
+        animation-name: right-left;
+    }
 
     .text {
         display: flex;
         flex-direction: column;
         color: @font-color;
+        animation-duration: 2s;
+        animation-name: left-right;
+
+
+        
 
         .title {
             font-size: 48px;
@@ -37,5 +45,15 @@
 
     }
 
+
+    @keyframes left-right {
+        from {transform: translateX(-300px)}
+        to {transform: translateX(0)}
+      }
+
+    @keyframes right-left {
+        from {transform: translateX(600px)}
+        to {transform: translateX(0)}
+      }
 
 }

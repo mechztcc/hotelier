@@ -8,6 +8,8 @@
     width: 80%;
     margin: 0 auto;
     margin-top: 5%;
+    animation-duration: 2s;
+    animation-name: bottom-up;
 
     
     .title {
@@ -41,4 +43,10 @@
             
         }
     }
+
+    
+    @keyframes bottom-up {
+        from {transform: translateY(100px)}
+        to {transform: translateX(0)}
+      }
 }

@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/template/navbar/navbar.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { CreateAccountComponent } from './components/pages/create-account/create-account.component';
 import { BannerComponent } from './components/template/banner/banner.component';
+import { StepbystepComponent } from './components/template/stepbystep/stepbystep.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BannerComponent } from './components/template/banner/banner.component';
     NavbarComponent,
     FooterComponent,
     CreateAccountComponent,
-    BannerComponent
+    BannerComponent,
+    StepbystepComponent
   ],
   imports: [
     BrowserModule,

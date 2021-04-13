@@ -1,0 +1,86 @@
+@import url(../../../../styles.less);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border: 1px solid @second-color;
+    border-radius: 20px;
+    padding: 40px 5px;
+    margin-bottom: 20%;
+    animation-duration: 2s;
+    animation-name: bottom-up;
+    
+    .title {
+        font-size: 25px;
+        color: @second-color;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        color: @second-color;
+        padding: 10px;
+    }
+
+    button {
+        border: none;
+        color: @second-color;
+        background-color: transparent;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .price {
+        display: flex;
+        color: @second-color;
+
+        .simbol {
+
+        }
+
+        .value {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+
+
+}
+
+.container:hover {
+    background: linear-gradient(120deg, @third-color, @second-color);
+    border: transparent;
+
+    .title {
+        color: #FFF;
+    }
+
+    .subtitle {
+        color: #FFF;
+    }
+
+    .price {
+        .simbol {
+            color: #FFF;
+        }
+
+        .value {
+            color: #FFF;
+        }
+
+        .duration {
+            color: #FFF;
+        }
+    }
+    button {
+        color: #FFF;
+    }
+
+}

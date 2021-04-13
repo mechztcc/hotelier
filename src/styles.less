@@ -17,6 +17,9 @@ button {
     cursor: pointer;
 }
 
+.active {
+  color: @second-color;
+}
 
 @keyframes left-right {
     from {transform: translateX(-200px)}
@@ -30,6 +33,10 @@ button {
 
   @keyframes bottom-up {
     from {transform: translateY(100px)}
+    to {transform: translateX(0)}
+  }
+  @keyframes up-bottom {
+    from {transform: translateY(-200px)}
     to {transform: translateX(0)}
   }
     

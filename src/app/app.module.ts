@@ -9,6 +9,10 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { CreateAccountComponent } from './components/pages/create-account/create-account.component';
 import { BannerComponent } from './components/template/banner/banner.component';
 import { StepbystepComponent } from './components/template/stepbystep/stepbystep.component';
+import { CardPlansComponent } from './components/template/card-plans/card-plans.component';
+import { PlanSelectionComponent } from './components/pages/plan-selection/plan-selection.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { StepbystepComponent } from './components/template/stepbystep/stepbystep
     FooterComponent,
     CreateAccountComponent,
     BannerComponent,
-    StepbystepComponent
+    StepbystepComponent,
+    CardPlansComponent,
+    PlanSelectionComponent
+
+
   ],
   imports: [
     BrowserModule,

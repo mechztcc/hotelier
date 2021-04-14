@@ -5,6 +5,9 @@ import { HomeComponent } from './components/main/pages/home/home.component';
 import { PlanSelectionComponent } from './components/main/pages/plan-selection/plan-selection.component';
 import { MainComponent } from './components/main/main.component';
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
+
 
 const routes: Routes = [
   
@@ -13,9 +16,7 @@ const routes: Routes = [
       { path: 'create', component: CreateAccountComponent },
       { path: 'plan', component: PlanSelectionComponent },
     ]},
-   { path: 'dashboard', component: AppComponent, children: [
-
-   ] }
+   { path: 'dashboard', component: DashboardComponent }
 ];
 
 @NgModule({

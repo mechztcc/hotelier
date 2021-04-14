@@ -15,6 +15,10 @@ import { TemplateModule } from './components/main/template/template.module';
 import { PagesModule } from './components/main/pages/pages.module';
 import { MainComponent } from './components/main/main.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SidenavComponent } from './components/dashboard/template/sidenav/sidenav.component';
+import { CardEmployeesComponent } from './components/dashboard/template/card-employees/card-employees.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 
@@ -22,13 +26,16 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
   declarations: [
     AppComponent,
     MainComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidenavComponent,
+    CardEmployeesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TemplateModule,
-    PagesModule
+    PagesModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

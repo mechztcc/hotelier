@@ -1,14 +1,21 @@
-import { CreateAccountComponent } from './components/pages/create-account/create-account.component';
+import { CreateAccountComponent } from './components/main/pages/create-account/create-account.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/pages/home/home.component';
-import { PlanSelectionComponent } from './components/pages/plan-selection/plan-selection.component';
+import { HomeComponent } from './components/main/pages/home/home.component';
+import { PlanSelectionComponent } from './components/main/pages/plan-selection/plan-selection.component';
+import { MainComponent } from './components/main/main.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'create', component: CreateAccountComponent },
-  { path: 'plan', component: PlanSelectionComponent },
+  
+    { path: '', component: MainComponent, children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'create', component: CreateAccountComponent },
+      { path: 'plan', component: PlanSelectionComponent },
+    ]},
+   { path: 'dashboard', component: AppComponent, children: [
 
+   ] }
 ];
 
 @NgModule({

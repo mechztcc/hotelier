@@ -20,6 +20,10 @@ import { CardEmployeesComponent } from './components/dashboard/template/card-emp
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SearchBarComponent } from './components/dashboard/template/search-bar/search-bar.component';
 import { HeaderCardComponent } from './components/dashboard/template/header-card/header-card.component';
+import { CardEmployeeComponent } from './components/dashboard/template/card-employee/card-employee.component';
+import { EmployeesComponent } from './components/dashboard/pages/employees/employees.component';
+import { ReservationComponent } from './components/dashboard/pages/reservation/reservation.component';
+import { CardReservationComponent } from './components/dashboard/template/card-reservation/card-reservation.component';
 
 
 
@@ -32,7 +36,11 @@ import { HeaderCardComponent } from './components/dashboard/template/header-card
     SidenavComponent,
     CardEmployeesComponent,
     SearchBarComponent,
-    HeaderCardComponent
+    HeaderCardComponent,
+    CardEmployeeComponent,
+    EmployeesComponent,
+    ReservationComponent,
+    CardReservationComponent
   ],
   imports: [
     BrowserModule,

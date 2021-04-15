@@ -6,6 +6,9 @@ import { PlanSelectionComponent } from './components/main/pages/plan-selection/p
 import { MainComponent } from './components/main/main.component';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CardEmployeeComponent } from './components/dashboard/template/card-employee/card-employee.component';
+import { EmployeesComponent } from './components/dashboard/pages/employees/employees.component';
+import { ReservationComponent } from './components/dashboard/pages/reservation/reservation.component';
 
 
 
@@ -16,7 +19,10 @@ const routes: Routes = [
       { path: 'create', component: CreateAccountComponent },
       { path: 'plan', component: PlanSelectionComponent },
     ]},
-   { path: 'dashboard', component: DashboardComponent }
+   { path: 'dashboard', component: DashboardComponent, children: [
+      { path: 'employees', component: EmployeesComponent },
+      { path: 'reservation', component: ReservationComponent },
+   ] }
 ];
 
 @NgModule({

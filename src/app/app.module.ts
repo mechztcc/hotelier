@@ -18,6 +18,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SidenavComponent } from './components/dashboard/template/sidenav/sidenav.component';
 import { CardEmployeesComponent } from './components/dashboard/template/card-employees/card-employees.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SearchBarComponent } from './components/dashboard/template/search-bar/search-bar.component';
+import { HeaderCardComponent } from './components/dashboard/template/header-card/header-card.component';
 
 
 
@@ -28,7 +30,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MainComponent,
     DashboardComponent,
     SidenavComponent,
-    CardEmployeesComponent
+    CardEmployeesComponent,
+    SearchBarComponent,
+    HeaderCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-banner',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
+
+  faRocket = faRocket;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-card-plans',
   templateUrl: './card-plans.component.html',
@@ -7,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardPlansComponent implements OnInit {
 
+
+  faRocket = faRocket;
+  
   constructor() { }
 
   ngOnInit(): void {

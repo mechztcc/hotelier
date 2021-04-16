@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     background-color: #FFF;
-    padding: 2%;
+    padding: 3%;
     position: fixed;
     height: 100%;
 
@@ -24,6 +24,7 @@
             padding: 5px;
             font-weight: bold;
             color: @font-color;
+
 
             fa-icon {
                 color: @second-color
@@ -45,8 +46,19 @@
             padding: 5px;
             font-weight: bold;
             width: 70%;
+            animation: blink 3s infinite;
     
         }
+
+        button:hover {
+            background-color: @third-color;
+        }
+
+    }
+
+    a:hover {
+        border-bottom: 1px solid @second-color;
+        border-top: 1px solid @second-color;
 
     }
 }

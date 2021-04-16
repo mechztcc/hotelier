@@ -24,6 +24,8 @@ import { CardEmployeeComponent } from './components/dashboard/template/card-empl
 import { EmployeesComponent } from './components/dashboard/pages/employees/employees.component';
 import { ReservationComponent } from './components/dashboard/pages/reservation/reservation.component';
 import { CardReservationComponent } from './components/dashboard/template/card-reservation/card-reservation.component';
+import { RoomsComponent } from './components/dashboard/pages/rooms/rooms.component';
+import { CardRoomComponent } from './components/dashboard/template/card-room/card-room.component';
 
 
 
@@ -40,7 +42,9 @@ import { CardReservationComponent } from './components/dashboard/template/card-r
     CardEmployeeComponent,
     EmployeesComponent,
     ReservationComponent,
-    CardReservationComponent
+    CardReservationComponent,
+    RoomsComponent,
+    CardRoomComponent
   ],
   imports: [
     BrowserModule,

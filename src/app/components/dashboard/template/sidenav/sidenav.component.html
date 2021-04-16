@@ -3,11 +3,7 @@
         <img src="assets/hotelier.svg" alt="">
     </div>
     <div class="links">
-        <a href="#">
-            <fa-icon [icon]="faUser"></fa-icon>
-            Clients
-        </a>
-        <a href="#">
+        <a [routerLink]="['/dashboard/rooms']">
             <fa-icon [icon]="faBed"></fa-icon>
             Rooms</a>
         <a [routerLink]="['/dashboard/employees']">

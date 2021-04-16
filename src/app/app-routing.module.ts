@@ -9,6 +9,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CardEmployeeComponent } from './components/dashboard/template/card-employee/card-employee.component';
 import { EmployeesComponent } from './components/dashboard/pages/employees/employees.component';
 import { ReservationComponent } from './components/dashboard/pages/reservation/reservation.component';
+import { RoomsComponent } from './components/dashboard/pages/rooms/rooms.component';
 
 
 
@@ -22,6 +23,7 @@ const routes: Routes = [
    { path: 'dashboard', component: DashboardComponent, children: [
       { path: 'employees', component: EmployeesComponent },
       { path: 'reservation', component: ReservationComponent },
+      { path: 'rooms', component: RoomsComponent },
    ] }
 ];
 

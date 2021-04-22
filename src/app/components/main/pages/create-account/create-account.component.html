@@ -11,7 +11,7 @@
             <input type="text" placeholder="*********" formControlName="password">
             <span *ngIf="!form.controls.password.pristine && form.controls.password.invalid" class="alert">Password is required</span>
             <label for="phone">Phone Number</label>
-            <input type="text" placeholder="000 0000 0000"  formControlName="phone">
+            <input type="text" placeholder="(00) 00000-0000"  formControlName="phone" mask="(00) 00000-0000">
             <span *ngIf="!form.controls.phone.pristine && form.controls.phone.invalid" class="alert">Phone is required</span>
 
             <button [routerLink]="['/plan']">Sign Up For Free</button>

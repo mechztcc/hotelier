@@ -5,6 +5,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { TemplateModule } from '../template/template.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,8 @@ import { TemplateModule } from '../template/template.module';
   imports: [
     CommonModule,
     RouterModule,
-    TemplateModule
+    TemplateModule,
+    ReactiveFormsModule
   ],
   exports: [
     HomeComponent,

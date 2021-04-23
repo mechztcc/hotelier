@@ -20,6 +20,10 @@
         color: @third-color;
     }
 
+    .img-mobile {
+        display: none;
+    }
+
     .title {
         font-size: 35px;
         color: @second-color;
@@ -40,6 +44,8 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
+
+        
 
         form {
             display: flex;
@@ -91,7 +97,33 @@
             font-size: 12px;
         }
 
+       
+
     }
 
 
+}
+
+@media (max-width: @tablet) {
+    .container {
+        .img {
+            // display: none;
+        }
+    }
+}
+
+
+@media (max-width: @phone) {
+    .container {
+
+        .img {
+            display: none;
+        }
+        .img-mobile {
+            display: inline;
+            height: auto;
+            width: 100%;
+        }
+    }
+  
 }

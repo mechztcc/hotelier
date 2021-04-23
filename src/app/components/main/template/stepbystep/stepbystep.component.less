@@ -19,6 +19,7 @@
         margin-bottom: 3%;
 
     }
+
     
     .footer {
         display: flex;
@@ -49,4 +50,17 @@
         from {transform: translateY(100px)}
         to {transform: translateX(0)}
       }
+}
+
+@media (max-width: @tablet) {
+    .container {
+        margin-top: 10%;
+        .title {
+            font-size: 20px;
+        }
+
+        img {
+            height: 80px;
+        }
+    }
 }

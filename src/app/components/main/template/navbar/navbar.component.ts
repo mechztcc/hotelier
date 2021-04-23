@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faRocket, faBars } from '@fortawesome/free-solid-svg-icons';
 import { NgProgress, NgProgressRef } from 'ngx-progressbar';
 
 @Component({
@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
   progressRef: NgProgressRef;
 
   faRocket = faRocket;
+  faBars = faBars;
   constructor(private progress: NgProgress) { }
 
   ngOnInit(): void {

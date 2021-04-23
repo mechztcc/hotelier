@@ -2,19 +2,38 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../../../assets/wave01.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    // background-image: url(../../../../../assets/wave01.svg);
+    // background-repeat: no-repeat;
+    // background-size: 100%;
     width: 100%;
-    margin-top: 5%;
-    height: 400px;
+    // margin-top: 5%;
+    // height: 350px;
     margin: 0 auto;
     animation-duration: 2s;
     animation-name: bottom-up;
+    position: absolute;
+
+
 
     span {
         color: @font-color;
+        position: absolute;
+        font-weight: bold;
+    }
+
+
+}
+
+@media (max-width: @tablet) {
+    .container {
+        bottom: 0;
+
+        span {
+            font-size: 15px;
+        }
     }
 }
+

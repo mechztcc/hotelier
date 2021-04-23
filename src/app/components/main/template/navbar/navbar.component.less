@@ -34,25 +34,56 @@ nav {
            color: #000;
            font-weight: 400;
            font-size: 22px;
+           margin: 10px;
        }
 
        a:hover {
          color: @second-color;
          font-weight: bold;
+       }
 
-
+       fa-icon {
+           display: none;
+           font-size: 22px;
        }
 
        button {
+        display: flex;
+        align-items: center;
         background-color: @third-color;
         color: #FFF;
         padding: 5px 10px;
         border: none;
         border-radius: 30px;
-
     }
    }
 
-
     
+}
+
+
+@media (max-width: @tablet) {
+    nav {
+        .logo {
+            // height: 50px;
+        }
+
+        .links {
+            justify-content: flex-end;
+            align-items: center;
+            a {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+
+            fa-icon {
+                display: inline;
+                font-size: 15px;
+
+            }
+        }
+    }
 }

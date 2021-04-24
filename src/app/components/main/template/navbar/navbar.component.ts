@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { faRocket, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faRocket, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { NgProgress, NgProgressRef } from 'ngx-progressbar';
 
 @Component({
@@ -13,6 +13,8 @@ export class NavbarComponent implements OnInit {
 
   faRocket = faRocket;
   faBars = faBars;
+  faTimes = faTimes;
+  
 
   flag: boolean = false;
 
@@ -28,6 +30,11 @@ export class NavbarComponent implements OnInit {
 
   }
 
+  ngDoCheck() {
+
+    
+  }
+
   fakeLoadCircle() {
     this.progressRef.start();
     setInterval(() => {
@@ -36,36 +43,16 @@ export class NavbarComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    console.log(this.barsIcon);
+
 
   }
 
+  // update this method
   showNavigation() {
-
-    if (!this.flag) {
-      this.barsIcon.nativeElement.style.flexDirection = 'column'
-      this.barsIcon.nativeElement.children[0].className = 'show'
-      this.barsIcon.nativeElement.children[1].className = 'show'
-      this.barsIcon.nativeElement.children[2].className = 'show'
-      this.barsIcon.nativeElement.children[3].className = 'show'
-      this.flag = !this.flag
-    }
-    else 
-    if (this.flag = true) {
-      this.barsIcon.nativeElement.style.flexDirection = ''
-      this.barsIcon.nativeElement.children[0].className = ''
-      this.barsIcon.nativeElement.children[1].className = ''
-      this.barsIcon.nativeElement.children[2].className = ''
-      this.barsIcon.nativeElement.children[3].className = ''
-      this.flag = !this.flag
-      
-    }
-
-
-
-
-
-
+    
+    this.flag = this.flag ? !this.flag : !this.flag
+  
   }
 
 }
+

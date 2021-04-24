@@ -12,6 +12,7 @@ nav {
     margin: 0 auto;
     margin-top: 3%;
     background-color: transparent;
+
     
 
 
@@ -64,15 +65,25 @@ nav {
 
 @media (max-width: @tablet) {
     nav {
+        height: 100%;
         .logo {
             // height: 50px;
         }
 
         .links {
+            // flex-direction: column;
             justify-content: flex-end;
             align-items: center;
+            // background-color: rgb(235, 235, 235);
+
             a {
                 display: none;
+            }
+
+            // change this name in future
+            .show {
+                display: inline;
+                
             }
 
             button {
@@ -80,7 +91,7 @@ nav {
             }
 
             fa-icon {
-                display: inline;
+                display: block;
                 font-size: 15px;
 
             }

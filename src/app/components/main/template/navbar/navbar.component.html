@@ -3,15 +3,15 @@
     <div [routerLink]="['/home']" class="logo">
         <img src="assets/hotelier.svg" alt="">
     </div>
-    <div class="links">
+    <div class="links" #links >
         <a [routerLink]="['/home']" >Home</a>
         <a [routerLink]="['/dashboard']">Dashboard</a>
         <a href="#">Work</a>
         <a href="#">Info</a>
-        <button [routerLink]="['/create']">
+        <button  [routerLink]="['/create']">
             <fa-icon [icon]="faRocket"></fa-icon>
             Get Started
         </button>
-        <fa-icon [icon]="faBars"></fa-icon>
+        <fa-icon (click)="showNavigation()" [icon]="faBars"></fa-icon>
     </div>
 </nav>

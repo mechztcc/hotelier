@@ -7,7 +7,7 @@
     flex-direction: column;
     background-color: #FFF;
     border-radius: 15px;
-    width: 700px;
+    // width: 700px;
     padding: 15px;
     animation-duration: 0.5s;
     animation-name: ascend;
@@ -42,5 +42,14 @@
         border: none;
         border-radius: 5px;
         padding: 5px;
+    }
+}
+
+
+ @media (max-width: @phone) { 
+    .card {
+        .content {
+           flex-direction: column;
+        }
     }
 }

@@ -14,4 +14,10 @@ export class DashboardComponent implements OnInit {
     this.route.navigate(['/dashboard/rooms'])
   }
 
+  mobileNavigate(item: any) {
+    const { value } = item;
+    this.route.navigate([`/dashboard/${value}`])
+    
+  }
+
 }

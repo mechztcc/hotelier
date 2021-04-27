@@ -9,6 +9,7 @@
     padding: 3%;
     position: fixed;
     height: 100%;
+    // left: -35%;
 
 
 
@@ -30,6 +31,8 @@
                 color: @second-color
             }
         }
+
+      
     }
 
     .button {
@@ -60,5 +63,16 @@
         border-bottom: 1px solid @second-color;
         border-top: 1px solid @second-color;
 
+    }
+}
+
+@media (max-width: @tablet) { 
+    
+
+    .container {
+        display: none;
+        .links {
+            
+        }
     }
 }

@@ -10,6 +10,15 @@
             <app-header-card></app-header-card>
         </div>
 
+        <div class="mob-header">
+            <select name="nav" (change)="mobileNavigate($event.target)">
+                <option value="rooms" >Rooms</option>
+                <option value="employees" >Employees</option>
+                <option value="reservation" >Reservations</option>
+                <option value="settings" >Settings</option>
+            </select>
+        </div>
+
         <router-outlet></router-outlet>
     </div>
 </div>

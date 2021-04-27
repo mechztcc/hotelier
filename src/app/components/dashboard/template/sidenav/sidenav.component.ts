@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
-import { faUser, faBed, faMale, faCalendar, faCogs, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faBed, faMale, faCalendar, faCogs, faHeart, faArrowsAltH } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-sidenav',
@@ -16,10 +16,30 @@ export class SidenavComponent implements OnInit {
   faCalendar = faCalendar;
   faCogs = faCogs;
   faHeart = faHeart;
+  faArrowsAltH = faArrowsAltH;
   
+
+  flag: boolean = true;
+
   constructor() { }
 
+  @ViewChild('links') barsIcon: ElementRef;
+
+
   ngOnInit(): void {
+    
+  }
+  
+  ngAfterViewInit() {
+    // console.log(this.barsIcon);
+
+
+  }
+
+  showSideNav() {
+    this.flag = this.flag ? !this.flag : !this.flag
+    // console.log(this.flag);
+    
   }
 
 }
